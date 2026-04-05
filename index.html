@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Corizon Contact Support</title>
+<style>
+  body {
+    margin:0;
+    padding:0;
+    background:#0a0a0a;
+    font-family: Arial, sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+  }
+
+  .container {
+    max-width:600px;
+    width:90%;
+    background: rgba(0,0,0,0.7);
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 0 20px #ff2b2b, 0 0 40px #ff2b2b inset;
+  }
+
+  h2 {
+    color:#ff2b2b;
+    text-shadow:0 0 10px #ff2b2b;
+    text-align:center;
+    margin-bottom:20px;
+  }
+
+  p {
+    color:#ff2b2b;
+    font-size:16px;
+    line-height:1.5;
+    text-align:center;
+  }
+
+  .learn-more {
+    display:inline-block;
+    margin:20px auto;
+    color:#00ccff;
+    font-weight:bold;
+    text-decoration:none;
+    border-bottom:3px solid #00ccff;
+    padding-bottom:3px;
+    text-shadow:0 0 5px #00ccff;
+    text-align:center;
+  }
+
+  .message-area {
+    margin-top:30px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+  }
+
+  textarea {
+    width:100%;
+    height:100px;
+    border-radius:10px;
+    border:none;
+    padding:10px;
+    font-size:16px;
+    background:#1a1a1a;
+    color:#ff2b2b;
+    box-shadow:0 0 10px #ff2b2b inset;
+    resize:none;
+  }
+
+  button {
+    margin-top:15px;
+    padding:10px 25px;
+    border:none;
+    border-radius:10px;
+    font-size:16px;
+    font-weight:bold;
+    color:#ff2b2b;
+    background:#0a0a0a;
+    box-shadow:0 0 10px #ff2b2b, 0 0 20px #ff2b2b inset;
+    cursor:pointer;
+    transition:0.2s;
+  }
+
+  button:hover {
+    transform: scale(1.05);
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Contact Support</h2>
+  <p>
+    Need help? Our support team is ready to assist you with any issues, questions, or feedback about Corizon. Simply visit the support section in the app for guidance, tips, and solutions to common problems. We’re here to make sure your experience is smooth and enjoyable!
+  </p>
+
+  <a href="https://oxocareplat.github.io/corizonlearn/" target="_blank" class="learn-more">
+    Learn More About Us
+  </a>
+
+  <div class="message-area">
+    <textarea placeholder="Type your message here..."></textarea>
+    <button onclick="confirmSend()">Send Message</button>
+  </div>
+</div>
+
+<script>
+function confirmSend() {
+    if (confirm("Are you sure you want to send this? You can't undo this action.")) {
+        alert("Message sent successfully! (Fake simulation)");
+        document.querySelector('textarea').value = '';
+    }
+}
+</script>
+
+</body>
+</html>
